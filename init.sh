@@ -34,3 +34,4 @@ gcloud config set project dsta-angelhack
 
 cd ~
 git clone https://github.com/TIL-24/til-24-base
+cp til-24-base/.env.example til-24-base/.env
