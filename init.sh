@@ -1,12 +1,12 @@
 # install vscode
-# sudo apt update
-# sudo apt install software-properties-common apt-transport-https wget -y
-# wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
-# sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
-# sudo apt-get install -y code
+sudo apt update
+sudo apt-get install -y software-properties-common apt-transport-https wget
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+sudo apt-get install -y code
 
 # Add Docker's official GPG key:
-sudo apt install ca-certificates curl
+sudo apt-get install -y ca-certificates curl
 sudo install -m 0755 -d /etc/apt/keyrings
 sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
 sudo chmod a+r /etc/apt/keyrings/docker.asc
