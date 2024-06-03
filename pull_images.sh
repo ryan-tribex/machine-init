@@ -4,7 +4,7 @@
 pull_images() {
     team=$1
     # You can specify the tags you want to pull here, for example: tags=("latest" "v1.0" "v2.0")
-    images=("main", "autonomy", "nlp", "asr", "vlm")
+    images=("main" "autonomy" "nlp" "asr" "vlm")
     
     for image in "${images[@]}"; do
         docker pull "asia-southeast1-docker.pkg.dev/dsta-angelhack/repository-$team/$team-$image:finals"
