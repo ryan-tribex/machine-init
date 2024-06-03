@@ -32,6 +32,9 @@ gcloud auth configure-docker asia-southeast1-docker.pkg.dev -q
 gcloud config set artifacts/location asia-southeast1
 gcloud config set project dsta-angelhack
 
+bash nvidiadocker_setup.sh
+
+# get base
 cd ~
 git clone https://github.com/TIL-24/til-24-base
 cp til-24-base/.env.example til-24-base/.env
