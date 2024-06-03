@@ -30,3 +30,7 @@ gcloud init
 # set up gcloud docker auth
 gcloud auth configure-docker asia-southeast1-docker.pkg.dev -q
 gcloud config set artifacts/location asia-southeast1
+gcloud config set project dsta-angelhack
+
+cd ~
+git clone https://github.com/TIL-24/til-24-base
