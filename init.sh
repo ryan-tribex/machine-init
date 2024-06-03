@@ -34,6 +34,11 @@ gcloud config set project dsta-angelhack
 
 bash nvidiadocker_setup.sh
 
+# add docker group
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
+
 # get base
 cd ~
 git clone https://github.com/TIL-24/til-24-base
