@@ -8,6 +8,9 @@ pull_images() {
     
     for image in "${images[@]}"; do
         docker pull "asia-southeast1-docker.pkg.dev/dsta-angelhack/repository-$team/$team-$image:finals"
+        if ! [ $? -eq 0 ] ; then
+            docker pull "asia-southeast1-docker.pkg.dev/dsta-angelhack/repository-$team/$team-$image:latest"
+        fi
     done
 }
 
