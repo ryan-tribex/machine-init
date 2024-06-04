@@ -6,3 +6,5 @@ sudo apt-get -y install cuda-toolkit-12-5
 
 sudo apt-get install -y cuda-drivers
 sudo apt-get autoremove
+
+bash nvidiadocker_setup.sh
